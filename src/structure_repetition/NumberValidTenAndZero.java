@@ -11,6 +11,7 @@ public class NumberValidTenAndZero {
         Scanner sc = new Scanner(System.in);
         int number;
 
+        // Structure received value "true" for force enter in structure validation number
         while (true) {
             System.out.println("Enter with number: ");
             number = sc.nextInt();
