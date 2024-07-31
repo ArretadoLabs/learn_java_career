@@ -13,21 +13,22 @@ public class LetterVogalOrConsonant {
 
         // Variables section
         char letter;
-
-        //letter = Character.toLowerCase(letter);
-
         // read data user input
         System.out.println("Enter with a letter: ");
         letter = sc.next().charAt(0);
 
+        letter = Character.toLowerCase(letter);
+
         // Verify value of letter
         if (letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u') {
-            System.out.println("Your letter is vogal");
+            System.out.println( letter + " is vogal");
         } else if (Character.isLetter(letter)) {
-            System.out.println(letter + "is consonant");
+            System.out.println(letter + " is consonant");
         } else {
             System.out.println("Input invalid, try again!");
         }
+
+        sc.close();
 
     }
 }
