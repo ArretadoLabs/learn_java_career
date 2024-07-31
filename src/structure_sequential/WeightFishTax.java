@@ -20,6 +20,7 @@ public class WeightFishTax {
 
         if (weightFish > 50) {
             taxFish = (weightFish - 50) * 4;
+            System.out.println("The excess weight is: " + (weightFish - 50));
             System.out.printf("Price tax of excess weight fish is: $%.2f ", taxFish);
         }
 
