@@ -25,7 +25,7 @@ public class ThreeOperationsNumbers {
         System.out.println("number three: ");
         numberThree = sc.nextFloat();
 
-        operationOne = (int) ((numberOne * 2) * (numberTwo / 2));
+        operationOne = ((numberOne * 2) * (numberTwo / 2));
         operationTwo =  (int) ((numberOne * 3) + (numberThree));
         operationThree = (int) Math.pow(numberThree, 3);
 
