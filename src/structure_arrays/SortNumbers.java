@@ -1,5 +1,7 @@
 package structure_arrays;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class SortNumbers {
@@ -13,16 +15,13 @@ public class SortNumbers {
         for (int i = 0; i < 5; i++) {
             System.out.println("number: " + i);
             numbers[i] = sc.nextInt();
-
-            System.out.println("String: " + i);
-            letters[i] = sc.next();
         }
 
-        System.out.println("numbers inserted is: ");
-        for (int i = 0; i < numbers.length; i++) {
-            System.out.println("index: " + i + ": " + numbers[i]);
-            System.out.println("index: " + i + ": " + letters[i]);
-        }
+
+        System.out.println("Original sequence: " + Arrays.toString(numbers));
+        Arrays.sort(numbers); // sorting sequence numbers
+        System.out.println("Sequence sorted: " + Arrays.toString(numbers));
+
         sc.close();
 
     }
